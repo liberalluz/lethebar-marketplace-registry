@@ -1,0 +1,84 @@
+{
+  "project": "lethebar-marketplace-registry",
+  "stack": "data",
+  "platforms": [],
+  "components": [
+    {
+      "name": "registry",
+      "stack": "data",
+      "dirs": [
+        "reviews",
+        "schema",
+        "tools"
+      ],
+      "platforms": []
+    }
+  ],
+  "language": {
+    "primary": "en-US",
+    "supported": [
+      "en-US",
+      "zh-CN"
+    ],
+    "external": "en-US"
+  },
+  "repoPolicy": {
+    "version": 1,
+    "provider": "github",
+    "profile": "team",
+    "visibility": "public",
+    "defaultBranch": "main",
+    "codeowners": [
+      "@liberalluz"
+    ],
+    "review": {
+      "requirePullRequest": true,
+      "requiredApprovals": 1,
+      "requireCodeOwnerReview": true,
+      "dismissStaleApprovals": true,
+      "requireLastPushApproval": false,
+      "requireConversationResolution": false
+    },
+    "checks": {
+      "required": [],
+      "requireUpToDate": false
+    },
+    "linearHistory": false,
+    "push": {
+      "allowForce": false,
+      "allowDeletions": false
+    }
+  },
+  "created_at": "2026-11-11T03:10:24.978018+00:00",
+  "execution": {
+    "batch": "infra/tool/batch"
+  },
+  "release": {
+    "tool": "infra/tool/release"
+  },
+  "git": {
+    "convention": "team",
+    "types": [
+      "feat",
+      "fix",
+      "docs",
+      "test",
+      "refactor",
+      "chore",
+      "ci"
+    ],
+    "scopes": [
+      "app",
+      "plugin",
+      "content",
+      "infra",
+      "docs",
+      "repo",
+      "tools"
+    ],
+    "body": [
+      "Why:",
+      "Batch:"
+    ]
+  }
+}

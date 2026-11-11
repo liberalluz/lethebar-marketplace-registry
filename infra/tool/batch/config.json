@@ -1,0 +1,19 @@
+{
+  "base": "main",
+  "branch_prefix": "batch/",
+  "docs_root": "",
+  "scope": {
+    "ignore": [],
+    "generated": []
+  },
+  "commit": {
+    "types": [],
+    "scopes": [],
+    "body": []
+  },
+  "checks": [],
+  "release_checks": [],
+  "pr_create": [],
+  "translate": [],
+  "merge": []
+}

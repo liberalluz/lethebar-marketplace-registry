@@ -1,0 +1,23 @@
+# OS
+.DS_Store
+Thumbs.db
+
+# Environment
+.env
+.env.*
+
+# Build output
+build/
+dist/
+.dart_tool/
+.godot/
+__pycache__/
+*.pyc
+
+# Nebula installation artifacts
+.nebula/
+.nebula-skills.json
+**/skills/nebula-*/
+
+# Batch execution state
+.batch/

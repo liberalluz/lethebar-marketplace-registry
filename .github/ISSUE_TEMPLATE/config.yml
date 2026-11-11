@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Security
+    url: https://github.com/liberalluz/lethebar-marketplace-registry/security/policy
+    about: Report vulnerabilities privately

@@ -1,5 +1,76 @@
 {
   "schemaVersion": 1,
-  "generatedAt": "2026-11-11T00:00:00Z",
-  "packages": []
+  "generatedAt": "2026-11-11T04:30:00Z",
+  "packages": [
+    {
+      "namespace": "liberalluz",
+      "id": "sanguo",
+      "version": "1.0.0",
+      "sha256": "3745e89b9a72603d42b96664a3681b6e4674d16070b92875ba63f4817994a605",
+      "specVersion": "2.0.0",
+      "engine": ">=4.7.0 <5.0.0",
+      "capabilities": ["render.2d@1", "text@1", "ledger@1", "rules@1", "phases@1", "menu@1", "relations@1"],
+      "author": "liberalluz",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/liberalluz/lethebar-game-sanguo",
+      "tags": ["three-kingdoms", "turn-based", "bundle"],
+      "collection": "three-kingdoms",
+      "kind": "bundle",
+      "publishedAt": "2026-11-07T11:34:35Z",
+      "status": "published"
+    },
+    {
+      "namespace": "liberalluz",
+      "id": "sanguo-content",
+      "version": "1.0.0",
+      "sha256": "e462d142a3782c07e500bc8d14d37782a7aaa64e89ccbaa52de5d288c2569eca",
+      "specVersion": "2.0.0",
+      "engine": ">=4.7.0 <5.0.0",
+      "capabilities": ["text@1"],
+      "author": "liberalluz",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/liberalluz/lethebar-game-sanguo",
+      "tags": ["three-kingdoms", "content-layer"],
+      "collection": "three-kingdoms",
+      "kind": "layer",
+      "layer": "content",
+      "publishedAt": "2026-11-08T08:37:44Z",
+      "status": "published"
+    },
+    {
+      "namespace": "liberalluz",
+      "id": "sanguo-hard",
+      "version": "1.0.1",
+      "sha256": "0495e34f983579e9945384880786ab2d51d3b43559c11a56c2c7e855741323cd",
+      "specVersion": "2.0.0",
+      "engine": ">=4.7.0 <5.0.0",
+      "capabilities": ["text@1", "ledger@1"],
+      "author": "liberalluz",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/liberalluz/lethebar-game-sanguo",
+      "tags": ["three-kingdoms", "mod-layer"],
+      "collection": "three-kingdoms",
+      "kind": "layer",
+      "layer": "mod",
+      "publishedAt": "2026-11-08T09:28:26Z",
+      "status": "published"
+    },
+    {
+      "namespace": "liberalluz",
+      "id": "cultivation",
+      "version": "1.0.1",
+      "sha256": "2157bf946e17c3e3bf363561a3c597f1de0fb706be2809f50409cb8327776f63",
+      "specVersion": "2.0.0",
+      "engine": ">=4.7.0 <5.0.0",
+      "capabilities": ["render.2d@1", "text@1"],
+      "author": "liberalluz",
+      "license": "Apache-2.0",
+      "homepage": "https://github.com/liberalluz/lethebar-game-cultivation",
+      "tags": ["cultivation", "linear", "bundle"],
+      "collection": "cultivation",
+      "kind": "bundle",
+      "publishedAt": "2026-11-08T09:35:47Z",
+      "status": "published"
+    }
+  ]
 }

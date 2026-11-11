@@ -20,4 +20,5 @@ jobs:
         with:
           python-version: "3.12"
       - run: python tools/validate.py --self-test
+      - run: python tools/review.py --self-test
       - run: python tools/validate.py index.json

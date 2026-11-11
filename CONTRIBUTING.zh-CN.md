@@ -1,3 +1,4 @@
+<!-- translation-of: CONTRIBUTING.md -->
 # 贡献指南
 
 [English](CONTRIBUTING.md) · 简体中文

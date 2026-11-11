@@ -11,7 +11,28 @@
     "scopes": [],
     "body": []
   },
-  "checks": [],
+  "checks": [
+    {
+      "name": "design",
+      "command": [
+        "python",
+        ".agents/skills/nebula-design/scripts/check_design.py",
+        "docs/specs/controlled/SRS.md",
+        "docs/specs/controlled/SDD.md"
+      ],
+      "cwd": "."
+    },
+    {
+      "name": "language",
+      "command": [
+        "python",
+        ".agents/skills/nebula-bootstrap/scripts/check_language.py",
+        "--root",
+        "."
+      ],
+      "cwd": "."
+    }
+  ],
   "release_checks": [],
   "pr_create": [],
   "translate": [],

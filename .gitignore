@@ -21,3 +21,6 @@ __pycache__/
 
 # Batch execution state
 .batch/
+
+# IDE metadata
+.idea/

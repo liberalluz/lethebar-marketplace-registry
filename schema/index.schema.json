@@ -1,0 +1,57 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://lethebar.dev/schema/index.schema.json",
+  "title": "Lethebar marketplace index",
+  "type": "object",
+  "required": ["schemaVersion", "packages"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "type": "integer", "const": 1 },
+    "generatedAt": { "type": "string", "format": "date-time" },
+    "packages": {
+      "type": "array",
+      "items": { "$ref": "#/$defs/record" }
+    }
+  },
+  "$defs": {
+    "record": {
+      "type": "object",
+      "required": [
+        "namespace", "id", "version", "sha256", "specVersion", "engine",
+        "capabilities", "author", "license", "homepage", "tags",
+        "publishedAt", "status"
+      ],
+      "additionalProperties": false,
+      "properties": {
+        "namespace": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "id": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "version": { "type": "string", "pattern": "^[0-9]+\.[0-9]+\.[0-9]+$" },
+        "sha256": { "type": "string", "pattern": "^[0-9a-f]{64}$" },
+        "specVersion": { "type": "string", "pattern": "^[0-9]+\.[0-9]+\.[0-9]+$" },
+        "engine": { "type": "string", "minLength": 1 },
+        "capabilities": {
+          "type": "array",
+          "items": { "type": "string", "pattern": "^[a-z][a-z0-9.]*@[0-9]+$" }
+        },
+        "author": { "type": "string", "minLength": 1 },
+        "license": { "type": "string", "minLength": 1 },
+        "homepage": { "type": "string", "minLength": 1 },
+        "tags": { "type": "array", "items": { "type": "string", "minLength": 1 } },
+        "collection": { "type": "string", "pattern": "^[a-z0-9-]+$" },
+        "kind": { "type": "string", "enum": ["bundle", "layer"] },
+        "layer": {
+          "type": "string",
+          "enum": ["profession", "genre", "mod", "content", "meta", "assets"]
+        },
+        "publishedAt": { "type": "string", "format": "date-time" },
+        "status": { "type": "string", "enum": ["published", "withdrawn"] }
+      },
+      "allOf": [
+        {
+          "if": { "properties": { "kind": { "const": "layer" } }, "required": ["kind"] },
+          "then": { "required": ["layer"] }
+        }
+      ]
+    }
+  }
+}

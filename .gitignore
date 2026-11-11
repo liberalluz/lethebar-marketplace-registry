@@ -24,3 +24,36 @@ __pycache__/
 
 # IDE metadata
 .idea/
+
+# BEGIN NEBULA MANAGED
+# Generated from packs/addyosmani-agent-skills/install.yaml. Do not edit by hand.
+**/skills/nebula-*/
+
+**/skills/api-and-interface-design/
+**/skills/browser-testing-with-devtools/
+**/skills/ci-cd-and-automation/
+**/skills/code-review-and-quality/
+**/skills/code-simplification/
+**/skills/constraint-driven-development/
+**/skills/context-engineering/
+**/skills/debugging-and-error-recovery/
+**/skills/deprecation-and-migration/
+**/skills/documentation-and-adrs/
+**/skills/doubt-driven-development/
+**/skills/frontend-ui-engineering/
+**/skills/git-workflow-and-versioning/
+**/skills/idea-refine/
+**/skills/incremental-implementation/
+**/skills/interview-me/
+**/skills/observability-and-instrumentation/
+**/skills/performance-optimization/
+**/skills/planning-and-task-breakdown/
+**/skills/security-and-hardening/
+**/skills/shipping-and-launch/
+**/skills/source-driven-development/
+**/skills/spec-driven-development/
+**/skills/test-driven-development/
+
+.nebula/
+.nebula-skills.json
+# END NEBULA MANAGED
